@@ -26,7 +26,7 @@ public class HospitalMvc2Application  implements CommandLineRunner {
         patient.setDateNaissance(new Date());
         patient.setScore(23);
 
-        Patient patient2 = new Patient(null,"youness",new Date(),false,25);
+        Patient patient2 = new Patient(null,"hajar",new Date(),false,25);
 
         Patient patient3 = Patient.builder()
                 .nom("zakaria")
@@ -37,8 +37,8 @@ public class HospitalMvc2Application  implements CommandLineRunner {
         patientRepository.save(patient);
         patientRepository.save(patient2);
         patientRepository.save(patient3);
-        patientRepository.save(new Patient(null,"mustapha",new Date(),false,225));
-        patientRepository.save(new Patient(null,"youness",new Date(),false,253));
-        patientRepository.save(new Patient(null,"zakaria",new Date(),true,256));
+        patientRepository.save(new Patient(null,"oumaima",new Date(),false,225));
+        patientRepository.save(new Patient(null,"rosa",new Date(),false,253));
+        patientRepository.save(new Patient(null,"joujou",new Date(),true,256));
     }
 }
